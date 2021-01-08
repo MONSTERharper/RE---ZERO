@@ -1,0 +1,19 @@
+{
+    "name": "sarvesh",
+    "context": "lone wolf",
+    "memory": "",
+    "actions": [
+        "running in a jungle",
+        "okay he said",
+        "hello",
+        "Hi",
+        "heelo"
+    ],
+    "results": [
+        "? I want to be able ta hunt some real wolves, but they haveistar dire wolves waiting for you there.\tReturn to Hansel Bauer at Venomspite in Dragonblight.\nIt's not working!$",
+        ", 'Screw that stuff up, I'll fix it anyway'.$B$BWell now... we've got the shredder working on something solid - don't worry about that 'snow' thing! It'll probably take you through the entire forge.$",
+        "there!\t\t\n\nNow that you're familiar with the mechanic's name, I'll give you an idea of what it could do. Imagine having your hand inside of his new salvage operation to the south!$",
+        ", there! That's an unusual move; I think not.$B$BYour best guess is that if you head west and into the main salvage area, you should find four small axes covered in snow. Bring 'em back to me and we'll get started on the rest of the list.",
+        "good work!\tReturn to Motley Garmason at Agmar's Hammer in Dragonblight.\n\\n\tReturn to ."
+    ]
+}

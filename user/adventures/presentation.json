@@ -1,0 +1,15 @@
+{
+    "name": "presentation",
+    "context": "You are a spy in england from russia working for KGB,",
+    "memory": "",
+    "actions": [
+        "You are about to get caught",
+        "And ask him to help you for the sake of friendship that they had",
+        "Go to hell"
+    ],
+    "results": [
+        "by the CIA and you need help.You find the right person for you.\n> You tell him to help you\n\"I'm not going to tell anyone I'm working with you!\" you say.",
+        "with the old man who gave them the money.\n\n\nThe man just nods his head, \"Okay then, but only if you want to be killed.\" He says.",
+        ".\n\n\nAnd that's how your relationship with the spymaster ends.\n\n\nYour job is done for today. You decide that you will go back home to sleep. Then tomorrow you will see the old man in the park again, and the next day after that."
+    ]
+}

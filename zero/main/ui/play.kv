@@ -1,0 +1,88 @@
+#:import Factory kivy.factory.Factory
+
+<MenuPopup>:
+	title: 'Menu'
+	size_hint: (0.4,0.667)
+	auto_dismiss: False
+
+	BoxLayout:
+		spacing: 4
+		orientation: 'vertical'
+
+		Button:
+			text: 'Resume'
+			on_release: root.dismiss()
+
+		Button:
+			text: 'Save Adventure'
+			on_release: root.on_save()
+
+		Button:
+			text: 'Load Adventure'
+			on_release: root.on_load()
+
+		Button:
+			text: 'Quit to Main Menu'
+			on_release: root.on_quit()
+
+
+<ErrorPopup>
+
+	title: 'Woops!'
+	size_hint: (0.4, 0.4)
+	auto_dismiss: False
+
+	BoxLayout:
+
+		Label:
+			id: error_text
+			text: ''
+			halign: 'center'
+			valign: 'middle'
+
+		Button:
+			text: 'Ok'
+			on_release: root.dismiss()
+			size_hint: (1,None)
+			height: 32
+			
+
+<PlayScreen>:
+
+	BoxLayout:
+		orientation: 'vertical'
+		padding: (4,4)
+		spacing: 4
+
+		Label:
+			id: title_text
+			size_hint: (1,None)
+			height: 32
+
+		ScrollView:
+			id: scroll_input
+			do_scroll_y: True
+
+			Label:
+				id: output_text
+				text: ''
+				markup: True
+				size_hint_y: None
+				text_size: self.width, None
+				height: self.texture_size[1]
+
+		BoxLayout:
+			spacing: 4
+			size_hint: (1, None)
+			height: 96
+
+			TextInput:
+				do_scroll_y: True
+				id: input
+				text: ''
+
+			Button:
+				id: button_send
+				text: 'Send'
+				on_release: root.on_send()
+		        size_hint: (1.0/6.0, 1)

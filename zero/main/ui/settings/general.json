@@ -1,0 +1,9 @@
+[
+	{
+        "type": "bool",
+        "title": "Autosave",
+        "desc": "If true, saves the adventure after every action performed by the AI.\nDefault is On.",
+        "section": "general",
+        "key": "autosave"
+    }
+]

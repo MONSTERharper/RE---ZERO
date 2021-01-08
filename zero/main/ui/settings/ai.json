@@ -1,0 +1,58 @@
+[
+	{
+        "type": "numeric",
+        "title": "Timeout",
+        "desc": "How long to wait for the AI to respond before timing out, in seconds.\nDefault is 20.0.",
+        "section": "ai",
+        "key": "timeout"
+    },
+	{
+        "type": "numeric",
+        "title": "Memory",
+        "desc": "How many actions and results the AI can remember. This doesn't affect context or memory. 0 or less will use the whole story.\nDefault is 20.",
+        "section": "ai",
+        "key": "memory"
+    },
+	{
+        "type": "numeric",
+        "title": "Max Length",
+        "desc": "The maximum length of words in the sequence the AI will generate.\nDefault is 60.",
+        "section": "ai",
+        "key": "max_length"
+    },
+	{
+        "type": "numeric",
+        "title": "Beam Searches",
+        "desc": "Number of searches the AI performs to find a higher cumulative text sequence probability.\nDefault is 1.",
+        "section": "ai",
+        "key": "beam_searches"
+    },
+	{
+        "type": "numeric",
+        "title": "Temperature",
+        "desc": "Lower temperatures make the AI more picky, higher make the AI more sporadic.\nDefault is 0.8.",
+        "section": "ai",
+        "key": "temperature"
+    },
+	{
+        "type": "numeric",
+        "title": "Top K Value",
+        "desc": "Keep only the top K tokens with the highest probability.\nDefault is 40.",
+        "section": "ai",
+        "key": "top_k"
+    },
+	{
+        "type": "numeric",
+        "title": "Top P Value",
+        "desc": "Keep only the tokens with a cumulative probability greater than or equal to P.\nDefault is 0.9.",
+        "section": "ai",
+        "key": "top_p"
+    },
+	{
+        "type": "numeric",
+        "title": "Repetition Penalty",
+        "desc": "1 is no penalty, >1 makes it less likely to repeat words in a given sequence.\nDefault is 1.1.",
+        "section": "ai",
+        "key": "repetition_penalty"
+    }
+]

@@ -1,0 +1,21 @@
+{
+    "name": "pratyush",
+    "context": "You are a spy working for the british spy.",
+    "memory": "",
+    "actions": [
+        "You are in the white house searching for some hidden documents",
+        "please see this paper",
+        "we need to find polly",
+        "hello",
+        "What is this?",
+        "Good morning polly"
+    ],
+    "results": [
+        "and some hidden people. I don't know how to help you, but if you really need something, I can give it to you.\"\n\n\n\"I'm fine,\" you say. \"Just getting started on some paperwork.\"\n\n\n\"N",
+        ".\" She hands you a piece of paper. It's blank, but she writes something down on it.\n\n\n\"This is the real name of all your friends. They're marked with an X. These are their aliases. For instance, they could be...\"\n\n\n\"Polly!\"\"",
+        "!\" you call back.\n\n\n\"Oh, yes, that's right.\"\n\n\n\"Who is she?\" you ask.\n\n\n\"She was a friend who worked here,\" she says, looking up from her papers. \"I think you already know what her real name is, though.\"\"",
+        ", $N! Just like that fool, I got myself a taste for magic! The rub against me--got a little too much to drink! I'll need plenty of tarot cards to figure out what she drank.$",
+        "Tarot? Oh, no...tarot means green. Not sure what I want, but I am certain it will work!$B$BI want you to take these cards to her and try them on her kittens. There's no magic involved, though.",
+        "! $B$bI am not a very good cook. I don't have much skill at all. I make a pretty good stew though, so I'll be okay.$"
+    ]
+}

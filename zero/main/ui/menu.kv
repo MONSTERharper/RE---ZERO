@@ -1,0 +1,148 @@
+<SelectableLabel>:
+    # Draw a background to indicate selection
+    canvas.before:
+        Color:
+            rgba: (.0, .0, 1, .3) if self.selected else (0, 0, 0, 1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+
+<SelectionView@RecycleView>:
+
+    SelectableRecycleBoxLayout:
+        spacing: 4
+        default_size: (None, dp(32))
+        default_size_hint: (1,None)
+        size_hint: (1,None)
+        height: self.minimum_height
+        orientation: 'vertical'
+        multiselect: False
+        touch_multiselect: False
+
+
+<MenuScreen>:
+    padding: (4,4)
+
+    TabbedPanel:
+        do_default_tab: False
+        
+        # AI MODEL TAB
+        TabbedPanelItem:
+            id: tab_model
+            text:'AI Model'
+
+            BoxLayout:
+                padding: (4,4)
+                orientation: 'vertical'
+
+                SelectionView:
+                    id: view_model
+                    viewclass: 'SelectableModelLabel'
+
+                Label:
+                    id: status_text_model
+                    text: 'No Model Loaded'
+                    size_hint:(1,None)
+                    height:32
+
+                Button:
+                    id: button_load_model
+                    text:'Load Model'
+                    on_release: root.load_ai()
+                    size_hint:(1,None)
+                    height:32
+                    disabled:True
+                
+
+        # NEW GAME TAB
+        TabbedPanelItem:
+            id: tab_new
+            text:'New Story'
+
+            BoxLayout:
+                padding: (4,4)
+                spacing: 4
+                orientation: 'vertical'
+
+                Label:
+                    text:'Story Save Name'
+                    size_hint: (1,None)
+                    height:32
+
+                TextInput:
+                    id: input_name
+                    text: ''
+                    hint_text: 'Enter a name for this adventure.'
+                    on_text: root.update_button_start_new()
+                    size_hint: (1,None)
+                    height:32
+                    multiline: False
+                    do_scroll_y: False
+
+                Label:
+                    text:'Story Context'
+                    size_hint: (1,None)
+                    height:32
+
+                TextInput:
+                    id: input_context
+                    text: ''
+                    hint_text: 'Enter a permanent story context, eg. "You are a lone adventurer, travelling the vast continent of Ileryn, performing good deeds for those in need."'
+                    on_text: root.update_button_start_new()
+                    multiline: True
+                    do_scroll_y: True
+
+                Label:
+                    text:'Starting Prompt'
+                    size_hint: (1,None)
+                    height:32
+
+                TextInput:
+                    id: input_prompt
+                    text: ''
+                    hint_text: 'Enter a prompt to start the story, eg. "You are in a dungeon, searching for a rare artifact you have been sent to retrieve, when suddenly"'
+                    on_text: root.update_button_start_new()
+                    multiline: True
+                    do_scroll_y: True
+
+                Label:
+                    id: status_text_new
+                    text: 'No Model Loaded'
+                    size_hint:(1,None)
+                    height:32
+
+                Button:
+                    id: button_start_new
+                    text: 'Start Adventure'
+                    on_release: root.on_start_new()
+                    size_hint: (1,None)
+                    height:32
+                    disabled: True
+        
+        # LOAD GAME TAB
+        TabbedPanelItem:
+            id: tab_load
+            text:'Load Story'
+
+            BoxLayout:
+                padding: (4,4)
+                orientation: 'vertical'
+                
+                SelectionView:
+                    id: view_game
+                    viewclass: 'SelectableGameLabel'
+
+                Label:
+                    id: status_text_load
+                    text: 'No Model Loaded'
+                    size_hint:(1,None)
+                    height:32
+
+                Button:
+                    id: button_start_load
+                    text:'Load Adventure'
+                    on_release: root.on_start_load()
+                    size_hint:(1,None)
+                    height:32
+                    disabled:True
