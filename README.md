@@ -1,3 +1,4 @@
+![logo_missing!](/zero/images/logo.png)
 # RE : ZERO
  A text based adventure story generator based on OpenAI's GPT2 model.
 
