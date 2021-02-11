@@ -12,5 +12,12 @@ https://drive.google.com/drive/folders/18uue26CJ5aL60XeDNs4XnqhcZtsoROJv?usp=sha
 ```
 (Don't know till when it will be up)
 
+```
+To run the application, You will need to download all the requirements packages.
+And
+In prompt just type
+Python connect.py
+To launch the application.
+```
 
 ![gif_missing!](/zero/images/re-zero.gif)
