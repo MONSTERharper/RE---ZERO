@@ -8,7 +8,7 @@ I will also provide a link for my trained model.
 
 Link for my models
 ```
-https://drive.google.com/drive/folders/18uue26CJ5aL60XeDNs4XnqhcZtsoROJv?usp=sharing
+[Link for my model](https://drive.google.com/drive/folders/18uue26CJ5aL60XeDNs4XnqhcZtsoROJv?usp=sharing)
 ```
 (Don't know till when it will be up)
 
